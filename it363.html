@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+   display: none;
+}
+ 
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: blue;
+  margin-top: 20px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<p>Click the button to show info</p>
+ 
+<button onclick="myFunction()">Button</button>
+ 
+<div id="myDIV">
+Base Info
+</div>
+<div id="myDIV2">
+More info
+</div>
+ 
+ 
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  var y= document.getElementById("myDIV2");
+  /*if ((x.style.display === "none" )||(y.style.display==="none")) {*/
+    y.style.display="block";
+        x.style.display = "block";
+  /*} /*else {
+        y.style.display="none";
+    x.style.display = "none";
+  }*/
+}
+</script>
+ 
+</body>
+</html>
